@@ -1,0 +1,100 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* header styling */
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 40px;
+}
+
+header h2 {
+  cursor: pointer;
+}
+
+header div a {
+  text-decoration: none;
+  margin: 7px;
+  color: black;
+  font-size: 16px;
+}
+
+/* main styling */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main h3 {
+  font-weight: 500;
+}
+
+main .works {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 50px;
+}
+
+main .works .image_div {
+  height: 130px;
+  width: 240px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+main .works .image_div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+main .works .image_div img:hover {
+  transform: scale(1.2);
+}
+
+/* footer styling */
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 20;
+  left: 0;
+  right: 0;
+}
+
+footer p {
+  color: gray;
+  font-size: 14px;
+}
+
+footer .icons i {
+  color: gray;
+  font-size: 16px;
+  margin: 6px;
+  cursor: pointer;
+}
+
+footer .icons i:hover {
+  color: black;
+}
